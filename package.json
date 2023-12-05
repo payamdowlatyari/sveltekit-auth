@@ -1,29 +1,33 @@
 {
-  "private": true,
-  "description": "An example project for Auth.js with SvelteKit",
-  "repository": "https://github.com/nextauthjs/sveltekit-auth-example",
-  "bugs": {
-    "url": "https://github.com/nextauthjs/next-auth/issues"
-  },
-  "homepage": "https://sveltekit-auth-example.vercel.app",
+  "name": "svelte-express-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for developing full stack apps with Express and Svelte.js",
+  "main": "src/app.js",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+    "client-install": "cd client && npm install",
+    "start": "node src/index.js",
+    "serve:server": "nodemon src/index.js",
+    "serve:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run serve:server\" \"npm run serve:client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dj0nny/svelte-express-boilerplate.git"
+  },
+  "author": "dj0nny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dj0nny/svelte-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dj0nny/svelte-express-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "concurrently": "^7.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
-    "svelte": "3.55.0",
-    "svelte-check": "2.10.2",
-    "typescript": "5.2.2",
-    "vite": "4.0.1"
-  },
-  "dependencies": {
-    "@auth/core": "latest",
-    "@auth/sveltekit": "latest"
-  },
-  "type": "module"
+    "nodemon": "^2.0.20"
+  }
 }

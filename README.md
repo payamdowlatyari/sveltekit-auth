@@ -1,39 +1,49 @@
-> The example repository is maintained from a [monorepo](https://github.com/nextauthjs/next-auth/tree/main/apps/examples/sveltekit). Pull Requests should be opened against [`nextauthjs/next-auth`](https://github.com/nextauthjs/next-auth).
+# svelte-express-boilerplate 📦
 
-<p align="center">
-   <br/>
-   <a href="https://authjs.dev" target="_blank">
-   <img height="64" src="https://authjs.dev/img/logo/logo-sm.png" />
-   </a>
-   <a href="https://kit.svelte.dev" target="_blank">
-   <img height="64" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" />
-   </a>
-   <h3 align="center"><b>SvelteKit Auth</b> - Example App</h3>
-   <p align="center">
-   Open Source. Full Stack. Own Your Data.
-   </p>
-   <p align="center" style="align: center;">
-      <a href="https://npm.im/@auth/sveltekit">
-        <img alt="npm" src="https://img.shields.io/npm/v/@auth/sveltekit?color=green&label=@auth/sveltekit&style=flat-square">
-      </a>
-      <a href="https://bundlephobia.com/result?p=@auth/sveltekit">
-        <img src="https://img.shields.io/bundlephobia/minzip/@auth/sveltekit?label=size&style=flat-square" alt="Bundle Size"/>
-      </a>
-      <a href="https://www.npmtrends.com/@auth/sveltekit">
-        <img src="https://img.shields.io/npm/dm/@auth/sveltekit?label=downloads&style=flat-square" alt="Downloads" />
-      </a>
-      <a href="https://npm.im/@auth/sveltekit">
-        <img src="https://img.shields.io/badge/TypeScript-blue?style=flat-square" alt="TypeScript" />
-      </a>
-   </p>
-</p>
+> Boilerplate for developing full stack apps with Express and Svelte.js
 
-## Overview
+## Getting Started
 
-This is the official SvelteKit Auth example for [Auth.js](https://sveltekit.authjs.dev).
+### Prerequisites  
 
-## Getting started
+For this project you need [__Node__](https://nodejs.org/en/) installed on your machine with [__Npm__](https://www.npmjs.com/) or [__Yarn__](https://yarnpkg.com).
 
-You can instantly deploy this example to [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=sveltekit-auth-example) by clicking the following button.
+### Download
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/nextauthjs/sveltekit-auth-example&project-name=sveltekit-auth-example&repository-name=sveltekit-auth-example)
+You can clone this repository using __Git__:
+```bash
+git clone https://github.com/dj0nny/svelte-express-boilerplate.git
+```
+
+Or download the repository [here](https://github.com/dj0nny/svelte-express-boilerplate/archive/develop.zip)
+
+### Quick start
+
+```bash
+# Install dependencies for server
+npm install
+
+# Install dependencies for client
+npm run client-install
+
+# Run the client & server with concurrently
+npm run dev
+
+# Run the Express server only
+npm run serve:server
+
+# Run the Svelte client only
+npm run serve:client
+
+# Server runs on http://localhost:5678 and client on http://localhost:5000
+```
+
+## Built with ❤️ using:
+
+* [Node.js](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine.
+* [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
+* [Svelte.js](https://svelte.dev/) - Javascript framework
+
+## Contributing
+
+Pull Requests for adding features ⇄ and ★ are welcome 😎
